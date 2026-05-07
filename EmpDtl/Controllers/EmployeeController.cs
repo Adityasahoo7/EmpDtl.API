@@ -16,6 +16,13 @@ namespace EmpDtl.Controllers
                 _context = context;
         }
 
+
+        [HttpGet]
+        [Route("Getallemp")]
+        public async Task<IActionResult> get() { 
+        
+        }
+
         [HttpPost]
         [Route("CreateEmployee")]
         public async Task<IActionResult> AddEmployee(CreateEmpDTO dto)
