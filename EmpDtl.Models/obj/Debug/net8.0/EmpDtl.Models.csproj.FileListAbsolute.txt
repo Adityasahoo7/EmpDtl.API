@@ -1,0 +1,14 @@
+D:\DotNet Project\EmpDtl\EmpDtl.Models\bin\Debug\net8.0\EmpDtl.Models.deps.json
+D:\DotNet Project\EmpDtl\EmpDtl.Models\bin\Debug\net8.0\EmpDtl.Models.runtimeconfig.json
+D:\DotNet Project\EmpDtl\EmpDtl.Models\bin\Debug\net8.0\EmpDtl.Models.dll
+D:\DotNet Project\EmpDtl\EmpDtl.Models\bin\Debug\net8.0\EmpDtl.Models.pdb
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.csproj.AssemblyReference.cache
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.AssemblyInfoInputs.cache
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.AssemblyInfo.cs
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.csproj.CoreCompileInputs.cache
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.dll
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\refint\EmpDtl.Models.dll
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.pdb
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\EmpDtl.Models.genruntimeconfig.cache
+D:\DotNet Project\EmpDtl\EmpDtl.Models\obj\Debug\net8.0\ref\EmpDtl.Models.dll
