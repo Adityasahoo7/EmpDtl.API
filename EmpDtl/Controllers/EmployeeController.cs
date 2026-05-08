@@ -39,6 +39,35 @@ namespace EmpDtl.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        [Route("getempbyid/{id}")]
+        public async Task<IActionResult> getbyid(int id) {
+
+            var emp = await _context.EmpDtlDS.FindAsync(id);
+
+            if(emp == null)
+            {
+                return NotFound($"No data Avaible in this id: {id} ");
+            }
+
+            var result = new GetEmpDTO
+            {
+                Id = emp.Id,
+                Name = emp.Name,
+                Email = emp.Email,
+                Department = emp.Department,
+                Designation = emp.Designation,
+                ManagerId = emp.ManagerId
+            };
+
+            return Ok(result);
+
+
+        
+        
+        }
+
+
         [HttpPost]
         [Route("CreateEmployee")]
         public async Task<IActionResult> AddEmployee(CreateEmpDTO dto)
@@ -58,6 +87,41 @@ namespace EmpDtl.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(emp);
+
+        }
+
+
+        [HttpPut]
+        [Route("updateemp/{id}")]
+        public async Task<IActionResult> updateemp(int id , UpdateEmpDTO dto)
+        {
+            var emp = await _context.EmpDtlDS.FindAsync(id);
+
+            if(emp == null)
+            {
+                return NotFound($"No data Avaible in this id: {id} ");
+            }
+            if(dto.Name != null)
+            {
+                emp.Name = dto.Name;
+            }
+            if(dto.Email != null)
+            {
+                emp.Email = dto.Email;
+            }
+            if(dto.Phone != null)
+            {
+                emp.Phone = dto.Phone;
+            }
+            if(dto.Department != null)
+            {
+                emp.Department = dto.Department;
+            }
+            if (dto.Salary != null)
+            {
+                emp.Salary = dto.Salary;
+            }
+
 
         }
 

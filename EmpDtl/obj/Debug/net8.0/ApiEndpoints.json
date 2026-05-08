@@ -26,6 +26,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EmpDtl.Controllers.EmployeeController",
+    "Method": "getbyid",
+    "RelativePath": "api/Employee/getempbyid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EmpDtl.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
