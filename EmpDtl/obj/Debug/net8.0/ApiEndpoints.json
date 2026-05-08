@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "EmpDtl.Controllers.EmployeeController",
+    "Method": "deleteemp",
+    "RelativePath": "api/Employee/Deleteemp/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpDtl.Controllers.EmployeeController",
     "Method": "get",
     "RelativePath": "api/Employee/Getallemp",
     "HttpMethod": "GET",
@@ -36,6 +52,27 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpDtl.Controllers.EmployeeController",
+    "Method": "updateemp",
+    "RelativePath": "api/Employee/updateemp/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "EmpDtl.Models.DTOs.UpdateEmpDTO",
         "IsRequired": true
       }
     ],

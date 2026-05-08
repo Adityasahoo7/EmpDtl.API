@@ -129,6 +129,22 @@ namespace EmpDtl.Controllers
 
         }
 
+        [HttpDelete]
+        [Route("Deleteemp/{id}")]
+        public async Task<IActionResult> deleteemp(int id)
+        {
+            var emp = await _context.EmpDtlDS.FindAsync(id);
+
+            if(emp == null)
+            {
+                return NotFound($"No data Avaible in this id: {id} ");
+            }
+
+            _context.EmpDtlDS.Remove(emp);
+            await _context.SaveChangesAsync();
+
+            return Ok("Deleted Successfully");
+        }
 
     }
 }

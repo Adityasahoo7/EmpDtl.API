@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmpDtl.Models")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a7254078967c1d1ff50e01b662094164b39405b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16702ce07e0736d038a907267e05f27d4de73976")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmpDtl.Models")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmpDtl.Models")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
