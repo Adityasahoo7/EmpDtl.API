@@ -123,6 +123,10 @@ namespace EmpDtl.Controllers
             }
 
 
+            await _context.SaveChangesAsync();
+            return Ok(emp);
+
+
         }
 
 
