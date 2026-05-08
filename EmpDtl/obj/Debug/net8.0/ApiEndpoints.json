@@ -16,6 +16,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "EmpDtl.Controllers.EmployeeController",
+    "Method": "get",
+    "RelativePath": "api/Employee/Getallemp",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EmpDtl.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

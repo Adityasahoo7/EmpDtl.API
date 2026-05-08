@@ -1,6 +1,7 @@
 ﻿using EmpDtl.Models;
 using EmpDtl.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EmpDtl.Controllers
 {
@@ -19,8 +20,23 @@ namespace EmpDtl.Controllers
 
         [HttpGet]
         [Route("Getallemp")]
-        public async Task<IActionResult> get() { 
-        
+        public async Task<IActionResult> get() {
+
+            var emp = await _context.EmpDtlDS.ToListAsync();
+
+            var result = emp.Select(e => new GetEmpDTO
+            {
+                Id = e.Id,
+                Name = e.Name,
+                Email = e.Email,
+                Department = e.Department,
+                Designation = e.Designation,
+                ManagerId = e.ManagerId
+
+
+            });
+
+            return Ok(result);
         }
 
         [HttpPost]

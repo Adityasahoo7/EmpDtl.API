@@ -146,3 +146,4 @@ D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.genruntimeconfig.cache
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\ref\EmpDtl.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.Models.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.Models.pdb
+D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.sourcelink.json
