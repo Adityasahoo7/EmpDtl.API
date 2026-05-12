@@ -129,6 +129,28 @@ namespace EmpDtl.Controllers
 
         }
 
+        [HttpPost]
+        [Route("createemp")]
+        public async Task<IActionResult> createempv2(CreateEmpDTO dto)
+        {
+            var emp = new AddEmployee
+            {
+
+                Name = dto.Name,
+                Email = dto.Email,
+                Phone = dto.Phone,
+                Department = dto.Department,
+                Designation = dto.Designation,
+                ManagerId = dto.ManagerId
+
+            };
+
+            await _context.EmpDtlDS.AddAsync(emp);
+            await _context.SaveChangesAsync();
+
+            return Ok(emp);
+        }
+
         [HttpDelete]
         [Route("Deleteemp/{id}")]
         public async Task<IActionResult> deleteemp(int id)

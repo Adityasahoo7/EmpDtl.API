@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "EmpDtl.Controllers.EmployeeController",
+    "Method": "createempv2",
+    "RelativePath": "api/Employee/createemp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EmpDtl.Models.DTOs.CreateEmpDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpDtl.Controllers.EmployeeController",
     "Method": "AddEmployee",
     "RelativePath": "api/Employee/CreateEmployee",
     "HttpMethod": "POST",
