@@ -16,5 +16,7 @@ namespace EmpDtl.Models
         }
 
         public DbSet<AddEmployee> EmpDtlDS { get; set; }
+
+        public DbSet<User> UserDs { get; set; }
     }
 }
