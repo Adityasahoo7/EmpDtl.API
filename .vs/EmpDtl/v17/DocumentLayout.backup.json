@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\DotNet Project\\EmpDtl\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\dtos\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\migrations\\20260519062735_addusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\migrations\\20260519062735_addusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,19 +59,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegisterRequestDTO.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\RegisterRequestDTO.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\RegisterRequestDTO.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\RegisterRequestDTO.cs",
+              "RelativeToolTip": "EmpDtl.Models\\DTOs\\RegisterRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:41:29.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\LoginResponse.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\LoginResponse.cs",
+              "RelativeToolTip": "EmpDtl.Models\\DTOs\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:40:18.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "RelativeToolTip": "EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-20T06:33:35.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "20260519062735_addusertable.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\Migrations\\20260519062735_addusertable.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\Migrations\\20260519062735_addusertable.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\Migrations\\20260519062735_addusertable.cs",
               "RelativeToolTip": "EmpDtl.Models\\Migrations\\20260519062735_addusertable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAABgZmZmZmYuwAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-19T06:27:36.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EmployeeDBContext.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\EmployeeDBContext.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\EmployeeDBContext.cs",
@@ -67,12 +118,11 @@
               "RelativeToolTip": "EmpDtl.Models\\EmployeeDBContext.cs",
               "ViewState": "AgIAAAYAAABgZmZmZmYkwBMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T06:25:23.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T06:25:23.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\User.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\User.cs",
@@ -80,12 +130,11 @@
               "RelativeToolTip": "EmpDtl.Models\\User.cs",
               "ViewState": "AgIAAA4AAAAANDMzMzPzvxgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-19T05:14:43.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-19T05:14:43.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UpdateEmpDTO.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\UpdateEmpDTO.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\UpdateEmpDTO.cs",
@@ -97,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "GetEmpDTO.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\GetEmpDTO.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\GetEmpDTO.cs",
@@ -109,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Program.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Program.cs",
@@ -117,12 +166,11 @@
               "RelativeToolTip": "EmpDtl\\Program.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAmwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-07T05:45:52.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-07T05:45:52.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
@@ -134,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AddEmployee.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\AddEmployee.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\AddEmployee.cs",
