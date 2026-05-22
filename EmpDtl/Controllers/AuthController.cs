@@ -1,4 +1,7 @@
-﻿using EmpDtl.Models;
+﻿using BCrypt.Net;
+using EmpDtl.Models;
+using EmpDtl.Models.DTOs;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
@@ -17,6 +20,33 @@ namespace EmpDtl.Controllers
         public AuthController(IConfiguration config)
         {
             _configuration = config;
+        }
+
+        //REGISTER METHOD
+        [HttpPost]
+        [Route("Registeruser")]
+        public IActionResult Register(RegisterRequestDTO dto)
+        {
+
+            var existinguser = usersmodel.FirstOrDefault(
+                x => x.Username == dto.Username
+                );
+
+            if(existinguser != null)
+            {
+                return BadRequest("User Already Present");
+            }
+
+            var user = new User
+            {
+                Id = Guid.NewGuid(),
+                Username = dto.Username,
+                Passwordhash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                Role = dto.Role
+            };
+
+            usersmodel.Add(user);
+            return Ok("User Created Successfuly");
         }
 
 
