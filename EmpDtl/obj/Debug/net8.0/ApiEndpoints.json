@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "EmpDtl.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/loginuser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EmpDtl.Models.DTOs.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpDtl.Controllers.AuthController",
+    "Method": "logout",
+    "RelativePath": "api/Auth/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpDtl.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Registeruser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EmpDtl.Models.DTOs.RegisterRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EmpDtl.Controllers.EmployeeController",
     "Method": "createempv2",
     "RelativePath": "api/Employee/createemp",

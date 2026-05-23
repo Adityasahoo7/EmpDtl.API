@@ -1,5 +1,6 @@
 ﻿using EmpDtl.Models;
 using EmpDtl.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,6 +19,7 @@ namespace EmpDtl.Controllers
         }
 
 
+        [AllowAnonymous]
         [HttpGet]
         [Route("Getallemp")]
         public async Task<IActionResult> get() {
@@ -39,6 +41,7 @@ namespace EmpDtl.Controllers
             return Ok(result);
         }
 
+        [Authorize(Roles ="Admin,User")]
         [HttpGet]
         [Route("getempbyid/{id}")]
         public async Task<IActionResult> getbyid(int id) {
@@ -67,7 +70,7 @@ namespace EmpDtl.Controllers
         
         }
 
-
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         [Route("CreateEmployee")]
         public async Task<IActionResult> AddEmployee(CreateEmpDTO dto)
@@ -90,7 +93,7 @@ namespace EmpDtl.Controllers
 
         }
 
-
+        [Authorize(Roles = "Admin,User")]
         [HttpPut]
         [Route("updateemp/{id}")]
         public async Task<IActionResult> updateemp(int id , UpdateEmpDTO dto)
@@ -128,7 +131,7 @@ namespace EmpDtl.Controllers
 
 
         }
-
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         [Route("createemp")]
         public async Task<IActionResult> createempv2(CreateEmpDTO dto)
@@ -150,7 +153,7 @@ namespace EmpDtl.Controllers
 
             return Ok(emp);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
         [Route("Deleteemp/{id}")]
         public async Task<IActionResult> deleteemp(int id)

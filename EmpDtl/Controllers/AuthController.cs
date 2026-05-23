@@ -4,11 +4,13 @@ using EmpDtl.Models.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EmpDtl.Controllers
 {
@@ -16,21 +18,26 @@ namespace EmpDtl.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private static List<User> usersmodel = new List<User>();
+       // private static List<User> usersmodel = new List<User>();
         private readonly IConfiguration _configuration;
-        public AuthController(IConfiguration config)
+        private readonly EmployeeDBContext _context;
+        public AuthController(IConfiguration config,EmployeeDBContext  context)
         {
             _configuration = config;
+            _context = context;
         }
 
         //LOGIN METHOD
         [HttpPost]
         [Route("loginuser")]
-        public IActionResult Login(LoginRequestDTO dto)
+        public async Task<IActionResult> Login(LoginRequestDTO dto)
         {
-            var user = usersmodel.FirstOrDefault(
+            var user = await _context.UserDs.FirstOrDefaultAsync(
                 x=>x.Username==dto.Username
                 );
+            //var user = usersmodel.FirstOrDefault(
+            //    x=>x.Username==dto.Username
+            //    );
 
             if(user == null)
             {
@@ -64,14 +71,17 @@ namespace EmpDtl.Controllers
         //REGISTER METHOD
         [HttpPost]
         [Route("Registeruser")]
-        public IActionResult Register(RegisterRequestDTO dto)
+        public async Task<IActionResult> Register(RegisterRequestDTO dto)
         {
-
-            var existinguser = usersmodel.FirstOrDefault(
-                x => x.Username == dto.Username
+            var checkuser = await _context.UserDs.FirstOrDefaultAsync(
+                x=>x.Username ==dto.Username
                 );
 
-            if(existinguser != null)
+            //var existinguser = usersmodel.FirstOrDefault(
+            //    x => x.Username == dto.Username
+            //    );
+
+            if(checkuser != null)
             {
                 return BadRequest("User Already Present");
             }
@@ -83,8 +93,10 @@ namespace EmpDtl.Controllers
                 Passwordhash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
                 Role = dto.Role
             };
+            _context.UserDs.Add(user);
+            _context.SaveChanges();
 
-            usersmodel.Add(user);
+            //usersmodel.Add(user);
             return Ok("User Created Successfuly");
         }
 
@@ -110,7 +122,7 @@ namespace EmpDtl.Controllers
 
             var key = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(
-                    _configuration["JWT.key"])
+                    _configuration["JWT:key"])
                 );
 
             var cred = new SigningCredentials(
@@ -118,12 +130,12 @@ namespace EmpDtl.Controllers
                 );
 
             var token = new JwtSecurityToken(
-                issuer: _configuration["JWT.Issuer"],
-                audience: _configuration["JWT.Audience"],
+                issuer: _configuration["JWT:Issuer"],
+                audience: _configuration["JWT:Audience"],
                 claims:claims,
                 expires:DateTime.Now.AddMinutes(
                     Convert.ToDouble(
-                        _configuration["JWT.Expair"]
+                        _configuration["JWT:Expair"]
                         )
                     ),
                 signingCredentials:cred

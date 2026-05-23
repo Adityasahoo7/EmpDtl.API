@@ -8,7 +8,9 @@ D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.pdb
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Azure.Core.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Azure.Identity.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\BCrypt-Net-Next.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Humanizer.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -121,6 +123,8 @@ D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.Models.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.Models.pdb
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.csproj.AssemblyReference.cache
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\rpswa.dswa.cache.json
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.GeneratedMSBuildEditorConfig.editorconfig
@@ -129,6 +133,7 @@ D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.AssemblyInfo.cs
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.csproj.CoreCompileInputs.cache
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.MvcApplicationPartsAssemblyInfo.cs
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.MvcApplicationPartsAssemblyInfo.cache
+D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.sourcelink.json
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -144,6 +149,3 @@ D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\refint\EmpDtl.dll
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.pdb
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.genruntimeconfig.cache
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\ref\EmpDtl.dll
-D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.Models.dll
-D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\EmpDtl.Models.pdb
-D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.sourcelink.json
