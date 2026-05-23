@@ -1,6 +1,7 @@
 ﻿using BCrypt.Net;
 using EmpDtl.Models;
 using EmpDtl.Models.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.JsonWebTokens;
@@ -21,6 +22,44 @@ namespace EmpDtl.Controllers
         {
             _configuration = config;
         }
+
+        //LOGIN METHOD
+        [HttpPost]
+        [Route("loginuser")]
+        public IActionResult Login(LoginRequestDTO dto)
+        {
+            var user = usersmodel.FirstOrDefault(
+                x=>x.Username==dto.Username
+                );
+
+            if(user == null)
+            {
+                return NotFound("User Not Found");
+            }
+
+            bool ispassvalid = BCrypt.Net.BCrypt.Verify(
+                dto.Password,
+                user.Passwordhash
+                );
+
+            if (!ispassvalid)
+            {
+                return Unauthorized("Enter Valid Password");
+            }
+
+            var token = Generatetoken(user);
+
+            var response = new LoginResponse
+            {
+                Token = token,
+                Username = user.Username,
+                Role = user.Role
+            };
+
+            return Ok(response);
+        }
+
+
 
         //REGISTER METHOD
         [HttpPost]
@@ -49,6 +88,13 @@ namespace EmpDtl.Controllers
             return Ok("User Created Successfuly");
         }
 
+        [Authorize]
+        [HttpPost]
+        [Route("logout")]
+        public IActionResult logout()
+        {
+            return Ok("Logout successfully");
+        }
 
         //Add JWT Token Validation Method
 
