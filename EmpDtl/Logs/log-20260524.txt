@@ -67,3 +67,5 @@ WHERE [u].[Username] = @__dto_Username_0
 2026-05-24 21:39:51.244 +05:30 [INF] Executed action EmpDtl.Controllers.AuthController.Login (EmpDtl) in 578.3873ms
 2026-05-24 21:39:51.246 +05:30 [INF] Executed endpoint 'EmpDtl.Controllers.AuthController.Login (EmpDtl)'
 2026-05-24 21:39:51.248 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5212/api/Auth/loginuser - 200 null application/json; charset=utf-8 604.5961ms
+2026-05-24 21:54:14.702 +05:30 [INF] No Valid Username Given
+2026-05-24 21:54:32.564 +05:30 [INF] Loggin Successful for user : Aditya
