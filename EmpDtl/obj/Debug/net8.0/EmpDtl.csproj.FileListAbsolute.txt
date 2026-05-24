@@ -149,3 +149,12 @@ D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\refint\EmpDtl.dll
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.pdb
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\EmpDtl.genruntimeconfig.cache
 D:\DotNet Project\EmpDtl\EmpDtl\obj\Debug\net8.0\ref\EmpDtl.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\DotNet Project\EmpDtl\EmpDtl\bin\Debug\net8.0\Serilog.Sinks.File.dll

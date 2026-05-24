@@ -21,10 +21,12 @@ namespace EmpDtl.Controllers
        // private static List<User> usersmodel = new List<User>();
         private readonly IConfiguration _configuration;
         private readonly EmployeeDBContext _context;
-        public AuthController(IConfiguration config,EmployeeDBContext  context)
+        private readonly ILogger<AuthController> _logger;
+        public AuthController(IConfiguration config,EmployeeDBContext  context,ILogger<AuthController> logger)
         {
             _configuration = config;
             _context = context;
+            _logger = logger;
         }
 
         //LOGIN METHOD
@@ -41,6 +43,7 @@ namespace EmpDtl.Controllers
 
             if(user == null)
             {
+                _logger.LogInformation("No Valid Username Given");
                 return NotFound("User Not Found");
             }
 
@@ -51,6 +54,7 @@ namespace EmpDtl.Controllers
 
             if (!ispassvalid)
             {
+                _logger.LogInformation("No Valid Password Given");
                 return Unauthorized("Enter Valid Password");
             }
 
@@ -62,6 +66,8 @@ namespace EmpDtl.Controllers
                 Username = user.Username,
                 Role = user.Role
             };
+
+            _logger.LogInformation("Loggin Successful for user : "+user.Username);
 
             return Ok(response);
         }
