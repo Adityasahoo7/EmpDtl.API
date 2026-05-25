@@ -67,7 +67,7 @@ namespace EmpDtl.Controllers
                 Role = user.Role
             };
 
-            _logger.LogInformation("Loggin Successful for user : "+user.Username);
+            _logger.LogInformation("Login Successful for userName : "+user.Username);
 
             return Ok(response);
         }
@@ -89,6 +89,7 @@ namespace EmpDtl.Controllers
 
             if(checkuser != null)
             {
+                _logger.LogInformation(checkuser.Username+" User Already Present but try to register again");
                 return BadRequest("User Already Present");
             }
 
@@ -102,6 +103,7 @@ namespace EmpDtl.Controllers
             _context.UserDs.Add(user);
             _context.SaveChanges();
 
+            _logger.LogInformation("User Creation Scuuessfully For UserName " + user.Username + " For Role : " + user.Role);
             //usersmodel.Add(user);
             return Ok("User Created Successfuly");
         }
@@ -147,6 +149,7 @@ namespace EmpDtl.Controllers
                 signingCredentials:cred
                 
                 );
+            _logger.LogInformation("Token Created Successfully for UserName: " + user.Username);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
