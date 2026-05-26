@@ -3,6 +3,7 @@ using EmpDtl.Models.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace EmpDtl.Controllers
 {
@@ -12,12 +13,16 @@ namespace EmpDtl.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly EmployeeDBContext _context;
+        private readonly ILogger<EmployeeController> _logger;
 
-        public EmployeeController(EmployeeDBContext context)
+        public EmployeeController(EmployeeDBContext context ,ILogger<EmployeeController> logger)
         {
                 _context = context;
+            _logger = logger;
         }
 
+        private string username => User.FindFirst(ClaimTypes.Name)?.Value ?? "Unknown";
+        private string role => User.FindFirst(ClaimTypes.Role)?.Value ?? "Unknown";
 
         [AllowAnonymous]
         [HttpGet]
@@ -37,7 +42,7 @@ namespace EmpDtl.Controllers
 
 
             });
-
+            _logger.LogInformation("Use GETALL API by username : " + username+" With Role: "+role);
             return Ok(result);
         }
 
