@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "EmpDtl\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAABoAAABAzszMzMwUwCsAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAKwAAAAAAAAAAABgPb4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-25T06:00:54.895Z",
               "EditorCaption": ""
@@ -95,8 +95,7 @@
               "RelativeToolTip": "EmpDtl\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T13:34:22.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T13:34:22.21Z"
             },
             {
               "$type": "Document",
@@ -108,8 +107,7 @@
               "RelativeToolTip": "EmpDtl\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAHcAAAAAaGZmZmb2v4QAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-23T13:28:19.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-23T13:28:19.252Z"
             }
           ]
         }

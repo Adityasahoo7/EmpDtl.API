@@ -1,0 +1,9 @@
+2026-05-26 12:23:15.153 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-05-26 12:23:15.318 +05:30 [INF] Login Successful for userName : Aditya
+2026-05-26 12:23:44.407 +05:30 [INF] Use GETALL API by username : Aditya With Role: Admin
+2026-05-26 12:23:56.412 +05:30 [INF] Username : Aditya Have enter wrong id to search employee
+2026-05-26 12:24:02.868 +05:30 [INF] Username : Aditya Have get the user details of this ID : 1002
+2026-05-26 12:24:19.990 +05:30 [INF] Username : Aditya Have enter wrong id to Delete ID : 100
+2026-05-26 12:24:26.558 +05:30 [INF] Username : Aditya Have enter wrong id to Delete ID : 1003
+2026-05-26 12:24:31.639 +05:30 [INF] Username : Aditya Have enter wrong id to Delete ID : 1009
+2026-05-26 12:24:36.445 +05:30 [INF] Username : Aditya Have delete the details of this ID : 1002
