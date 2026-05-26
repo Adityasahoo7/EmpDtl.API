@@ -55,6 +55,7 @@ namespace EmpDtl.Controllers
 
             if(emp == null)
             {
+                _logger.LogInformation("Username : " + username + " Have enter wrong id to search employee");
                 return NotFound($"No data Avaible in this id: {id} ");
             }
 
@@ -68,6 +69,7 @@ namespace EmpDtl.Controllers
                 ManagerId = emp.ManagerId
             };
 
+            _logger.LogInformation("Username : " + username + " Have get the user details of this ID : " + id);
             return Ok(result);
 
 
@@ -94,6 +96,7 @@ namespace EmpDtl.Controllers
             await _context.EmpDtlDS.AddAsync(emp);
             await _context.SaveChangesAsync();
 
+            _logger.LogInformation("Username : " + username + " Have create a user with this name :" + dto.Name);
             return Ok(emp);
 
         }
@@ -105,8 +108,11 @@ namespace EmpDtl.Controllers
         {
             var emp = await _context.EmpDtlDS.FindAsync(id);
 
-            if(emp == null)
+            if (emp == null)
+               
             {
+                _logger.LogInformation("Username : " + username + " Have enter wrong id to update ID : " + id);
+
                 return NotFound($"No data Avaible in this id: {id} ");
             }
             if(dto.Name != null)
@@ -132,6 +138,9 @@ namespace EmpDtl.Controllers
 
 
             await _context.SaveChangesAsync();
+
+            _logger.LogInformation("Username : " + username + " Have Update the detaails of this  ID : " + id);
+
             return Ok(emp);
 
 
@@ -167,11 +176,17 @@ namespace EmpDtl.Controllers
 
             if(emp == null)
             {
+                _logger.LogInformation("Username : " + username + " Have enter wrong id to Delete ID : " + id);
+
+
                 return NotFound($"No data Avaible in this id: {id} ");
             }
 
             _context.EmpDtlDS.Remove(emp);
             await _context.SaveChangesAsync();
+            _logger.LogInformation("Username : " + username + " Have delete the details of this ID : " + id);
+
+
 
             return Ok("Deleted Successfully");
         }
