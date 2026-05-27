@@ -191,5 +191,67 @@ namespace EmpDtl.Controllers
             return Ok("Deleted Successfully");
         }
 
+
+        //UPLODE RESUME ACTION METHOD
+
+        [HttpPost]
+        [Route("create-employee-resume")]
+        public async Task<IActionResult> CreateEmpwithResume([FromForm] CreateEmpDTOV2 dto)
+        {
+            var emp = new AddEmployee
+            {
+                Name = dto.Name,
+                Email = dto.Email,
+                Phone = dto.Phone,
+                Designation = dto.Designation,
+                Department = dto.Department,
+                Salary = dto.Salary,
+                ManagerId = dto.ManagerId
+            };
+
+            //UPLODE  RESUME
+            if (dto.Resume != null)
+            {
+                var folderpath = Path.Combine(
+                    Directory.GetCurrentDirectory(),
+                    "Uplodes",
+                    "Resumes"
+                    );
+
+
+                if (!Directory.Exists(folderpath))
+                {
+                    Directory.CreateDirectory(folderpath);
+                }
+
+                var extention = Path.GetExtension(dto.Resume.FileName);
+
+                var uniquefilename = Guid.NewGuid().ToString() + extention;
+
+                var filepath = Path.Combine(folderpath, uniquefilename);
+
+
+                using(var stream = new FileStream(filepath, FileMode.Create))
+                {
+                    await dto.Resume.CopyToAsync(stream);
+                }
+
+
+                emp.ResumePath = $"Uplodes/Resumes/{uniquefilename}";
+                emp.ResemefileName = dto.Resume.FileName;
+
+
+
+
+            }
+
+            await _context.EmpDtlDS.AddAsync(emp);
+            await _context.SaveChangesAsync();
+
+            return Ok(emp);
+        }
+
+
+
     }
 }
