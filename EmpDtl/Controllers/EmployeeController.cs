@@ -46,6 +46,20 @@ namespace EmpDtl.Controllers
             return Ok(result);
         }
 
+        [HttpGet] 
+        [Route("GetAllEmpwithResume")]
+        public async Task<IActionResult> getv2()
+        {
+            var emp = await _context.EmpDtlDS.ToListAsync();
+
+            var result = emp.Select(e => new GetEmpDTOV2
+            {
+
+            });
+
+            return Ok(result);
+        }
+
         [Authorize(Roles ="Admin,User")]
         [HttpGet]
         [Route("getempbyid/{id}")]
@@ -240,6 +254,7 @@ namespace EmpDtl.Controllers
                 emp.ResumePath = $"Uplodes/Resumes/{uniquefilename}";
                 emp.ResemefileName = dto.Resume.FileName;
 
+                _logger.LogInformation("Uplode Resume for Name : " + dto.Name);
 
 
 
@@ -248,6 +263,7 @@ namespace EmpDtl.Controllers
             await _context.EmpDtlDS.AddAsync(emp);
             await _context.SaveChangesAsync();
 
+            _logger.LogInformation("Username : "+username+" Created Employee Successfully with name : "+emp.Name);
             return Ok(emp);
         }
 

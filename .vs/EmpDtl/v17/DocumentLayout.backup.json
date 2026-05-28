@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\DotNet Project\\EmpDtl\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\migrations\\20260527044551_addresumefunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\migrations\\20260527044551_addresumefunctionality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,6 +47,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20260527044551_addresumefunctionality.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\Migrations\\20260527044551_addresumefunctionality.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\Migrations\\20260527044551_addresumefunctionality.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\Migrations\\20260527044551_addresumefunctionality.cs",
+              "RelativeToolTip": "EmpDtl.Models\\Migrations\\20260527044551_addresumefunctionality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T04:45:52.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AddEmployee.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\AddEmployee.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\AddEmployee.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Middlewares\\ExceptionMiddleware.cs",
@@ -81,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EmpDtl.csproj",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\EmpDtl.csproj",
               "RelativeDocumentMoniker": "EmpDtl\\EmpDtl.csproj",
@@ -93,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\appsettings.json",
               "RelativeDocumentMoniker": "EmpDtl\\appsettings.json",
@@ -105,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Program.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Program.cs",
@@ -117,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\AuthController.cs",
