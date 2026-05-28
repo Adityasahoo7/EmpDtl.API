@@ -51,14 +51,22 @@ namespace EmpDtl.Controllers
         public async Task<IActionResult> getv2()
         {
             var emp = await _context.EmpDtlDS.ToListAsync();
-
             var result = emp.Select(e => new GetEmpDTOV2
             {
-
+                Id=e.Id,
+                Name=e.Name,
+                Email=e.Email,
+                Department=e.Department,
+                Designation=e.Designation,
+                ManagerId = e.ManagerId,
+                ResumePath = e.ResumePath,
+                ResemefileName=e.ResemefileName
             });
-
+            _logger.LogInformation("Username : "+username+" Have use The GETALLEMP V2");
             return Ok(result);
+
         }
+
 
         [Authorize(Roles ="Admin,User")]
         [HttpGet]
