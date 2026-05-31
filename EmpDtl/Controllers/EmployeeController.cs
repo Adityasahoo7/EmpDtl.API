@@ -377,7 +377,7 @@ namespace EmpDtl.Controllers
 
                 //Save in DB
 
-                employee.ResumePath = $"Uploads/Resumes/{uniquefilepath}";
+                employee.ResumePath = $"Uplodes/Resumes/{uniquefilepath}";
                 employee.ResemefileName = dto.Resume.FileName;
 
 
@@ -391,6 +391,43 @@ namespace EmpDtl.Controllers
 
         }
 
+
+        [HttpGet]
+        [Route("GetResumebyId/{id}")]
+        public async Task<IActionResult> downloderesume(int id)
+        {
+            var emp = await _context.EmpDtlDS.FirstOrDefaultAsync(
+                e=>e.Id==id
+                );
+
+            if (emp == null)
+            {
+                return NotFound("Employee Not Found");
+            }
+
+            if (string.IsNullOrEmpty(emp.ResumePath))
+            {
+                return NotFound("Employee not uplode his resume");
+            }
+
+            var filrpath = Path.Combine(Directory.GetCurrentDirectory(),emp.ResumePath);
+
+
+            if (!System.IO.File.Exists(filrpath))
+            {
+                return NotFound("Resume not found in this directory:  " + filrpath);
+            }
+            var stream = new FileStream(
+                filrpath,
+                FileMode.Open,
+                FileAccess.Read
+                );
+
+
+            return File(stream, "application/octet-stream",emp.ResemefileName);
+
+
+        }
 
 
 

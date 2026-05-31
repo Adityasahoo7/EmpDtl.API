@@ -1,0 +1,9 @@
+2026-05-31 18:02:37.730 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-05-31 18:20:38.812 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-05-31 18:21:32.559 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-05-31 18:21:32.701 +05:30 [INF] Login Successful for userName : Aditya
+2026-05-31 18:22:51.732 +05:30 [INF] Use GETALL API by username : Aditya With Role: Admin
+2026-05-31 18:27:25.214 +05:30 [INF] Use GETALL API by username : Aditya With Role: Admin
+2026-05-31 18:30:23.692 +05:30 [INF] Uplode Resume for Name : Aditya Sahoo
+2026-05-31 18:30:23.999 +05:30 [INF] Username : Aditya Created Employee Successfully with name : Aditya Sahoo
+2026-05-31 18:40:28.097 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown

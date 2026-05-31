@@ -38,8 +38,7 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\UpdateEmpDTOV2.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T07:30:20.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T07:30:20.057Z"
             },
             {
               "$type": "Document",
@@ -47,9 +46,9 @@
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
-              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "EmpDtl\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAHQBAACgmZmZmRkwwIgBAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs*",
+              "RelativeToolTip": "EmpDtl\\Controllers\\EmployeeController.cs*",
+              "ViewState": "AgIAAF8AAAAAwJmZmZnpv5QAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T05:12:36.006Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "EmpDtl\\Program.cs",
               "ViewState": "AgIAAGQAAAAAMzMzMzMbwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T05:00:45.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T05:00:45.429Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "EmpDtl.Models\\AddEmployee.cs",
               "ViewState": "AgIAAAMAAABgZmZmZmYkwBEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T04:43:42.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T04:43:42.504Z"
             }
           ]
         }
