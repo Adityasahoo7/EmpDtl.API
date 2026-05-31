@@ -55,6 +55,8 @@ namespace EmpDtl.Controllers
             {
                 Id=e.Id,
                 Name=e.Name,
+
+
                 Email=e.Email,
                 Department=e.Department,
                 Designation=e.Designation,
@@ -164,7 +166,6 @@ namespace EmpDtl.Controllers
             _logger.LogInformation("Username : " + username + " Have Update the detaails of this  ID : " + id);
 
             return Ok(emp);
-
 
         }
         [Authorize(Roles = "Admin,User")]
@@ -276,6 +277,46 @@ namespace EmpDtl.Controllers
         }
 
 
+        //UPDATE EMP WITH RESUME
+
+        [HttpPut]
+        [Route("UpdateempwithResume/{id}")]
+        public async Task<IActionResult> UpdateempResume(int id ,UpdateEmpDTOV2 dto)
+        {
+            //var employee = await _context.EmpDtlDS.FindAsync(id);
+            var employee = await _context.EmpDtlDS.FirstOrDefaultAsync(x => x.Id == id);
+
+
+            if (employee == null)
+            {
+                return NotFound("Please give the Correct EMP ID");
+            }
+
+            if(dto.Name != null)
+            {
+                employee.Name = dto.Name;
+            }
+            if (dto.Phone != null)
+            {
+                employee.Phone = dto.Phone;
+            }
+            if (dto.Email != null)
+            {
+                employee.Email = dto.Email;
+            }
+            if (dto.Department != null)
+            {
+                employee.Department = dto.Department;
+            }
+            if (dto.Designation != null)
+            {
+                employee.Designation = dto.Designation;
+            }
+            if (dto.Salary != null)
+            {
+                employee.Salary = dto.Salary;
+            }
+        }
 
     }
 }
