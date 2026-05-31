@@ -316,7 +316,83 @@ namespace EmpDtl.Controllers
             {
                 employee.Salary = dto.Salary;
             }
+
+            if(dto.Resume != null)
+            {
+                var allowextention = new[] { ".pdf", ".doc", ".docx" };
+                var extention = Path.GetExtension(dto.Resume.FileName).ToLower();
+
+                if (!allowextention.Contains(extention))
+                {
+                    return BadRequest("Only pdf doc and DOCX file approve");
+                }
+
+                if(dto.Resume.Length > 5 * 1024 * 1024)
+                {
+                    return BadRequest("File size could not exceed 5MB");
+                }
+
+                //Delete OLD RESUME
+                if (!string.IsNullOrEmpty(employee.ResumePath))
+                {
+                    var oldfilepath = Path.Combine(
+
+                        Directory.GetCurrentDirectory(),
+                        employee.ResumePath);
+
+                    if (System.IO.File.Exists(oldfilepath))
+                    {
+                        System.IO.File.Delete(oldfilepath);
+                    }
+
+
+                }
+
+                //Create Folder
+
+                var folderpath = Path.Combine(
+                    Directory.GetCurrentDirectory(),
+                    "Uplodes",
+                    "Resumes");
+
+                if (!Directory.Exists(folderpath))
+                {
+                    Directory.CreateDirectory(folderpath);
+                }
+
+
+                //Generate Unique file path
+                var uniquefilepath = Guid.NewGuid().ToString() + extention;
+
+
+                //full file path 
+                var fullpath = Path.Combine(folderpath, uniquefilepath);
+
+                //Save file
+
+                using(var stream = new FileStream(fullpath, FileMode.Create))
+                {
+                    await dto.Resume.CopyToAsync(stream);
+                }
+
+                //Save in DB
+
+                employee.ResumePath = $"Uploads/Resumes/{uniquefilepath}";
+                employee.ResemefileName = dto.Resume.FileName;
+
+
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok(new
+            {
+                message = "Employee Updated Successfully"
+            });
+
         }
+
+
+
 
     }
 }
