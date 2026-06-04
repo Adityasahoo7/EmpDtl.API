@@ -7,3 +7,4 @@
 2026-05-31 18:30:23.692 +05:30 [INF] Uplode Resume for Name : Aditya Sahoo
 2026-05-31 18:30:23.999 +05:30 [INF] Username : Aditya Created Employee Successfully with name : Aditya Sahoo
 2026-05-31 18:40:28.097 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-05-31 18:47:40.950 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
