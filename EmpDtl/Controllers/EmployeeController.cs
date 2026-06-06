@@ -216,7 +216,7 @@ namespace EmpDtl.Controllers
 
 
         //UPLODE RESUME ACTION METHOD
-
+        [Authorize(Roles ="Admin,Users")]
         [HttpPost]
         [Route("create-employee-resume")]
         public async Task<IActionResult> CreateEmpwithResume([FromForm] CreateEmpDTOV2 dto)
@@ -278,7 +278,7 @@ namespace EmpDtl.Controllers
 
 
         //UPDATE EMP WITH RESUME
-
+        [Authorize(Roles ="Admin,Users")]
         [HttpPut]
         [Route("UpdateempwithResume/{id}")]
         public async Task<IActionResult> UpdateempResume(int id ,UpdateEmpDTOV2 dto)
@@ -391,7 +391,7 @@ namespace EmpDtl.Controllers
 
         }
 
-
+        [Authorize(Roles ="Admin , Users")]
         [HttpGet]
         [Route("GetResumebyId/{id}")]
         public async Task<IActionResult> downloderesume(int id)
