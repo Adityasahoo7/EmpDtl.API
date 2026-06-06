@@ -249,6 +249,14 @@ namespace EmpDtl.Controllers
 
                 var extention = Path.GetExtension(dto.Resume.FileName);
 
+                var extentionlower = Path.GetExtension(dto.Resume.FileName).ToLower();
+                var allowextention = new[] {".pdf",".docx",".doc" };
+
+                if (!allowextention.Contains(extentionlower))
+                {
+                    return BadRequest("Kindly Uplode proper Format Resume of PDF , DOC AND DOCX");
+                }
+
                 var uniquefilename = Guid.NewGuid().ToString() + extention;
 
                 var filepath = Path.Combine(folderpath, uniquefilename);
