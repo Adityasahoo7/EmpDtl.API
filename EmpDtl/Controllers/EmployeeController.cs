@@ -38,7 +38,8 @@ namespace EmpDtl.Controllers
                 Email = e.Email,
                 Department = e.Department,
                 Designation = e.Designation,
-                ManagerId = e.ManagerId
+                ManagerId = e.ManagerId,
+                Salary=e.Salary
 
 
             });
@@ -46,6 +47,7 @@ namespace EmpDtl.Controllers
             return Ok(result);
         }
 
+        [AllowAnonymous]
         [HttpGet] 
         [Route("GetAllEmpwithResume")]
         public async Task<IActionResult> getv2()
@@ -69,8 +71,8 @@ namespace EmpDtl.Controllers
 
         }
 
-
-        [Authorize(Roles ="Admin,User")]
+        [AllowAnonymous]
+        //[Authorize(Roles ="Admin,User")]
         [HttpGet]
         [Route("getempbyid/{id}")]
         public async Task<IActionResult> getbyid(int id) {
@@ -100,8 +102,8 @@ namespace EmpDtl.Controllers
         
         
         }
-
-        [Authorize(Roles = "Admin,User")]
+        [AllowAnonymous]
+       // [Authorize(Roles = "Admin,User")]
         [HttpPost]
         [Route("CreateEmployee")]
         public async Task<IActionResult> AddEmployee(CreateEmpDTO dto)
@@ -124,8 +126,8 @@ namespace EmpDtl.Controllers
             return Ok(emp);
 
         }
-
-        [Authorize(Roles = "Admin,User")]
+        [AllowAnonymous]
+       // [Authorize(Roles = "Admin,User")]
         [HttpPut]
         [Route("updateemp/{id}")]
         public async Task<IActionResult> updateemp(int id , UpdateEmpDTO dto)
@@ -167,8 +169,13 @@ namespace EmpDtl.Controllers
 
             return Ok(emp);
 
+        
+        
         }
-        [Authorize(Roles = "Admin,User")]
+
+
+        [AllowAnonymous]
+        //[Authorize(Roles = "Admin,User")]
         [HttpPost]
         [Route("createemp")]
         public async Task<IActionResult> createempv2(CreateEmpDTO dto)
@@ -190,7 +197,9 @@ namespace EmpDtl.Controllers
 
             return Ok(emp);
         }
-        [Authorize(Roles = "Admin")]
+
+        [AllowAnonymous]
+        //[Authorize(Roles = "Admin")]
         [HttpDelete]
         [Route("Deleteemp/{id}")]
         public async Task<IActionResult> deleteemp(int id)
@@ -216,7 +225,8 @@ namespace EmpDtl.Controllers
 
 
         //UPLODE RESUME ACTION METHOD
-        [Authorize(Roles ="Admin,Users")]
+        [AllowAnonymous]
+        //[Authorize(Roles ="Admin,Users")]
         [HttpPost]
         [Route("create-employee-resume")]
         public async Task<IActionResult> CreateEmpwithResume([FromForm] CreateEmpDTOV2 dto)
@@ -286,7 +296,8 @@ namespace EmpDtl.Controllers
 
 
         //UPDATE EMP WITH RESUME
-        [Authorize(Roles ="Admin,Users")]
+        [AllowAnonymous]
+        //[Authorize(Roles ="Admin,Users")]
         [HttpPut]
         [Route("UpdateempwithResume/{id}")]
         public async Task<IActionResult> UpdateempResume(int id ,UpdateEmpDTOV2 dto)
@@ -398,8 +409,8 @@ namespace EmpDtl.Controllers
             });
 
         }
-
-        [Authorize(Roles ="Admin , Users")]
+        [AllowAnonymous]
+       // [Authorize(Roles ="Admin , Users")]
         [HttpGet]
         [Route("GetResumebyId/{id}")]
         public async Task<IActionResult> downloderesume(int id)
