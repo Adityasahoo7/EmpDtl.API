@@ -421,6 +421,11 @@ namespace EmpDtl.Controllers
 
             if (emp == null)
             {
+
+                _logger.LogInformation("Username : " + username + " Have Entered wrong id for downlode resume ID: "+id);
+
+
+
                 return NotFound("Employee Not Found");
             }
 
@@ -441,6 +446,8 @@ namespace EmpDtl.Controllers
                 FileMode.Open,
                 FileAccess.Read
                 );
+
+            _logger.LogInformation("Username : " + username + " Have Reqest todownlode of employee : "+emp.Name+" Resume");
 
 
             return File(stream, "application/octet-stream",emp.ResemefileName);
