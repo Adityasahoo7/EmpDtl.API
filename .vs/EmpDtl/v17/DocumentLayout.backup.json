@@ -46,8 +46,7 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\GetEmpDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T13:43:53.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T13:43:53.857Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\GetEmpDTOV2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T13:43:45.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-07T13:43:45.548Z"
             },
             {
               "$type": "Document",
@@ -82,7 +80,7 @@
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "EmpDtl\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAH8AAAAAMDMzMzMnwCQAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4BAAC4NDMzMzMtwKoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T05:12:36.006Z",
               "EditorCaption": ""
@@ -109,8 +107,7 @@
               "RelativeToolTip": "EmpDtl.Models\\AddEmployee.cs",
               "ViewState": "AgIAABQAAABgZmZmZmYqwBEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T04:43:42.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T04:43:42.504Z"
             }
           ]
         }
