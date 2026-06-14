@@ -65,7 +65,8 @@ namespace EmpDtl.Controllers
                 Designation=e.Designation,
                 ManagerId = e.ManagerId,
                 ResumePath = e.ResumePath,
-                ResemefileName=e.ResemefileName
+                ResemefileName=e.ResemefileName,
+                Joindate=e.Joindate
             });
             _logger.LogInformation("Username : "+username+" Have use The GETALLEMP V2");
             return Ok(result);
@@ -240,7 +241,8 @@ namespace EmpDtl.Controllers
                 Designation = dto.Designation,
                 Department = dto.Department,
                 Salary = dto.Salary,
-                ManagerId = dto.ManagerId
+                ManagerId = dto.ManagerId,
+                Joindate=dto.Joindate
             };
 
             //UPLODE  RESUME
