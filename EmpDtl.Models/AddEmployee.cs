@@ -22,9 +22,9 @@ namespace EmpDtl.Models
         public string Designation { get; set; }
         [Required(ErrorMessage = "Salary is required")]
         public int Salary { get; set; }
-        public int ManagerId { get; set; }
-
+        public int ManagerId { get; set; }   
         public string? ResumePath { get; set; }
         public string? ResemefileName { get; set; }
+        public DateOnly Joindate { get; set; }
     }
 }

@@ -39,7 +39,8 @@ namespace EmpDtl.Controllers
                 Department = e.Department,
                 Designation = e.Designation,
                 ManagerId = e.ManagerId,
-                Salary=e.Salary
+                Salary=e.Salary,
+                Joindate=e.Joindate
 
 
             });
@@ -334,6 +335,10 @@ namespace EmpDtl.Controllers
             if (dto.Salary != null)
             {
                 employee.Salary = dto.Salary;
+            }
+            if(dto.Joindate != null)
+            {
+                employee.Joindate = dto.Joindate;
             }
 
             if(dto.Resume != null)

@@ -14,7 +14,7 @@ namespace EmpDtl.Models.DTOs
         public string Department { get; set; }
         public string Designation { get; set; }
         public int ManagerId { get; set; }
-
+        public DateOnly Joindate { get; set; }
         public string? ResumePath { get; set; }
         public string? ResemefileName { get; set; }
     }

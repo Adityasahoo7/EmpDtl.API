@@ -1,0 +1,5 @@
+2026-06-14 14:06:44.438 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-14 14:09:32.834 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 14:12:40.960 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-14 14:13:18.185 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 14:17:55.484 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown

@@ -287,6 +287,10 @@
                     "type": "integer",
                     "format": "int32"
                   },
+                  "Joindate": {
+                    "type": "string",
+                    "format": "date"
+                  },
                   "Resume": {
                     "type": "string",
                     "format": "binary"
@@ -313,6 +317,9 @@
                   "style": "form"
                 },
                 "ManagerId": {
+                  "style": "form"
+                },
+                "Joindate": {
                   "style": "form"
                 },
                 "Resume": {
@@ -385,6 +392,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "Joindate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
             }
           }
         ],

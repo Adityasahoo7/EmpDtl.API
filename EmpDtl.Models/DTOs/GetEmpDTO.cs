@@ -15,6 +15,7 @@ namespace EmpDtl.Models.DTOs
         public string Department { get; set; }
         public string Designation { get; set; }
         public int  Salary { get; set; }
+        public DateOnly Joindate { get; set; }
         public int ManagerId { get; set; }
     }
 }

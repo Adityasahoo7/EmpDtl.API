@@ -85,6 +85,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Joindate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
         "Name": "Resume",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -254,6 +259,11 @@
       {
         "Name": "Salary",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Joindate",
+        "Type": "System.DateOnly",
         "IsRequired": false
       },
       {

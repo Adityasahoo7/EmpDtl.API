@@ -17,7 +17,7 @@ namespace EmpDtl.Models.DTOs
         public string Designation { get; set; }
         public int Salary { get; set; }
         public int ManagerId { get; set; }
-
+        public DateOnly Joindate { get; set; }
         public IFormFile Resume { get; set; }
     }
 }

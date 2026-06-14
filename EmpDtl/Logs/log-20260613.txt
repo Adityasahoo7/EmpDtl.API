@@ -1,0 +1,16 @@
+2026-06-13 18:35:15.278 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-13 18:39:23.687 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-13 18:40:05.903 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-13 18:44:26.230 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-13 18:44:26.381 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-13 18:50:49.466 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-13 18:50:49.468 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-13 18:50:51.276 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-13 19:17:02.468 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-13 19:21:07.005 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-13 19:21:07.005 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-13 19:21:07.005 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-13 19:21:07.121 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-13 19:21:07.121 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-13 19:21:07.121 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-13 19:21:09.146 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
