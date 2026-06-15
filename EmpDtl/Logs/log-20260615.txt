@@ -1,1 +1,49 @@
 2026-06-15 08:34:46.456 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-15 08:40:18.357 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 08:40:18.357 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 08:40:18.603 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 08:40:18.603 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 08:40:19.128 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 08:42:45.237 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 08:45:55.307 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 08:47:41.443 +05:30 [INF] Uplode Resume for Name : Pritam k
+2026-06-15 08:47:41.999 +05:30 [INF] Username : Unknown Created Employee Successfully with name : Pritam k
+2026-06-15 08:47:44.748 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 08:56:40.514 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 08:56:48.158 +05:30 [INF] Username : Unknown Have delete the details of this ID : 2002
+2026-06-15 08:56:49.709 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 08:57:53.052 +05:30 [INF] Uplode Resume for Name : Pritam K
+2026-06-15 08:57:53.064 +05:30 [INF] Username : Unknown Created Employee Successfully with name : Pritam K
+2026-06-15 08:57:54.724 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 09:05:57.516 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 09:06:35.346 +05:30 [INF] Uplode Resume for Name : xxx
+2026-06-15 09:06:35.431 +05:30 [INF] Username : Unknown Created Employee Successfully with name : xxx
+2026-06-15 09:06:36.944 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 09:10:15.748 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 09:11:12.945 +05:30 [INF] Uplode Resume for Name : AAAA
+2026-06-15 09:11:13.031 +05:30 [INF] Username : Unknown Created Employee Successfully with name : AAAA
+2026-06-15 09:11:14.746 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 09:40:49.717 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-15 10:24:35.352 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 10:24:35.585 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 10:24:36.155 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:36:37.428 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:39:44.462 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:39:58.127 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:40:49.899 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:43:28.165 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:49:42.347 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:50:17.284 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:50:46.033 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 10:50:46.034 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 10:50:46.076 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:57:30.968 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 10:57:30.970 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 10:59:02.291 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:59:29.865 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 10:59:40.754 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 10:59:40.809 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 10:59:40.946 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-15 11:00:09.581 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-15 11:00:09.583 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-15 11:00:09.620 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
