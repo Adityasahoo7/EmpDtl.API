@@ -3,3 +3,23 @@
 2026-06-14 14:12:40.960 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
 2026-06-14 14:13:18.185 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
 2026-06-14 14:17:55.484 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 20:54:00.811 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-14 20:58:40.526 +05:30 [INF] No Valid Password Given
+2026-06-14 20:59:02.374 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-14 20:59:02.534 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-14 20:59:06.130 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:03:09.033 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:03:24.486 +05:30 [INF] No Valid Password Given
+2026-06-14 21:03:39.292 +05:30 [INF] No Valid Password Given
+2026-06-14 21:03:58.929 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-06-14 21:03:58.931 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-14 21:04:01.247 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:04:19.082 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:10:34.886 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:11:41.088 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:14:09.584 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:14:31.040 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:17:55.899 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:28:47.967 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-06-14 21:31:28.510 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-06-14 21:32:20.057 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
