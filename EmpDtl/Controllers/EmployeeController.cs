@@ -73,8 +73,8 @@ namespace EmpDtl.Controllers
 
         }
 
-        [AllowAnonymous]
-        //[Authorize(Roles ="Admin,User")]
+       // [AllowAnonymous]
+        [Authorize(Roles ="Admin,User")]
         [HttpGet]
         [Route("getempbyid/{id}")]
         public async Task<IActionResult> getbyid(int id) {
@@ -104,8 +104,8 @@ namespace EmpDtl.Controllers
         
         
         }
-        [AllowAnonymous]
-       // [Authorize(Roles = "Admin,User")]
+       // [AllowAnonymous]
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         [Route("CreateEmployee")]
         public async Task<IActionResult> AddEmployee(CreateEmpDTO dto)
@@ -176,8 +176,8 @@ namespace EmpDtl.Controllers
         }
 
 
-        [AllowAnonymous]
-        //[Authorize(Roles = "Admin,User")]
+       // [AllowAnonymous]
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         [Route("createemp")]
         public async Task<IActionResult> createempv2(CreateEmpDTO dto)
@@ -200,8 +200,8 @@ namespace EmpDtl.Controllers
             return Ok(emp);
         }
 
-        [AllowAnonymous]
-        //[Authorize(Roles = "Admin")]
+        //[AllowAnonymous]
+        [Authorize(Roles = "Admin")]
         [HttpDelete]
         [Route("Deleteemp/{id}")]
         public async Task<IActionResult> deleteemp(int id)
@@ -227,8 +227,8 @@ namespace EmpDtl.Controllers
 
 
         //UPLODE RESUME ACTION METHOD
-        [AllowAnonymous]
-        //[Authorize(Roles ="Admin,Users")]
+       // [AllowAnonymous]
+        [Authorize(Roles ="Admin,Users")]
         [HttpPost]
         [Route("create-employee-resume")]
         public async Task<IActionResult> CreateEmpwithResume([FromForm] CreateEmpDTOV2 dto)
@@ -299,8 +299,8 @@ namespace EmpDtl.Controllers
 
 
         //UPDATE EMP WITH RESUME
-        [AllowAnonymous]
-        //[Authorize(Roles ="Admin,Users")]
+       // [AllowAnonymous]
+        [Authorize(Roles ="Admin,Users")]
         [HttpPut]
         [Route("UpdateempwithResume/{id}")]
         public async Task<IActionResult> UpdateempResume(int id ,UpdateEmpDTOV2 dto)
@@ -416,8 +416,8 @@ namespace EmpDtl.Controllers
             });
 
         }
-        [AllowAnonymous]
-       // [Authorize(Roles ="Admin , Users")]
+       // [AllowAnonymous]
+        [Authorize(Roles ="Admin , Users")]
         [HttpGet]
         [Route("GetResumebyId/{id}")]
         public async Task<IActionResult> downloderesume(int id)
