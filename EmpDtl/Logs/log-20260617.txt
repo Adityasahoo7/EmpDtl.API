@@ -1,0 +1,1 @@
+2026-06-17 11:28:23.109 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.

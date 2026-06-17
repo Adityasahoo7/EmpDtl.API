@@ -1,3 +1,4 @@
 2026-06-16 12:08:56.820 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
 2026-06-16 12:09:51.647 +05:30 [INF] Token Created Successfully for UserName: Aditya
 2026-06-16 12:09:51.891 +05:30 [INF] Login Successful for userName : Aditya
+2026-06-16 12:12:59.840 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
