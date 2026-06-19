@@ -1,0 +1,680 @@
+==============================================================
+HRMS — PER MODULE LAYER BREAKDOWN
+DAL | BLL (DTOs + Validators) | Service | Controller
+==============================================================
+
+NOTE:
+  [NEW] = Newly added module not in original blueprint
+  Every module shares these across all layers:
+    DAL SHARED    → IGenericRepository, GenericRepository, IUnitOfWork, UnitOfWork, AppDbContext
+    BLL SHARED    → MappingProfile.cs
+    SHARED LIB    → ApiResponse, PagedResponse, AppConstants, RoleConstants,
+                    NotFoundException, BadRequestException, UnauthorizedException, ForbiddenException
+    MIDDLEWARE    → ExceptionMiddleware, JwtMiddleware, RequestLoggingMiddleware
+
+==============================================================
+MODULE 1 — AUTH
+==============================================================
+
+DAL
+---
+  Interfaces  : (No separate repo — uses GenericRepository via UnitOfWork for RefreshToken)
+  Repositories: RefreshToken managed via UnitOfWork
+
+BLL — DTOs
+----------
+  LoginRequestDto.cs
+  LoginResponseDto.cs
+  RegisterRequestDto.cs
+  RefreshTokenRequestDto.cs
+  ChangePasswordDto.cs           [NEW]
+
+BLL — Validators
+----------------
+  (none — validation handled inside AuthService + FluentValidation inline)
+
+SERVICE
+-------
+  Interface   : IAuthService.cs
+  Service     : AuthService.cs
+  Helpers     : JwtHelper.cs (EMS.Shared)
+
+CONTROLLER
+----------
+  AuthController.cs
+    → Login()
+    → Register()
+    → RefreshToken()
+    → Logout()
+    → ChangePassword()          [NEW]
+
+==============================================================
+MODULE 2 — EMPLOYEE MANAGEMENT
+==============================================================
+
+DAL
+---
+  Interfaces  : IEmployeeRepository.cs
+  Repositories: EmployeeRepository.cs
+
+BLL — DTOs
+----------
+  CreateEmployeeDto.cs
+  UpdateEmployeeDto.cs
+  EmployeeResponseDto.cs
+  EmployeeDetailsDto.cs
+  BulkImportEmployeeDto.cs       [NEW]
+
+BLL — Validators
+----------------
+  EmployeeValidator.cs
+
+SERVICE
+-------
+  Interface   : IEmployeeService.cs
+  Service     : EmployeeService.cs
+  Helpers     : ExcelHelper.cs (for BulkImport — EMS.Shared)
+
+CONTROLLER
+----------
+  EmployeeController.cs
+    → GetAll()
+    → GetById()
+    → Create()
+    → Update()
+    → Delete()
+    → BulkImport()              [NEW]
+
+==============================================================
+MODULE 3 — DEPARTMENT
+==============================================================
+
+DAL
+---
+  Interfaces  : IDepartmentRepository.cs
+  Repositories: DepartmentRepository.cs
+
+BLL — DTOs
+----------
+  CreateDepartmentDto.cs
+  UpdateDepartmentDto.cs
+  DepartmentResponseDto.cs
+
+BLL — Validators
+----------------
+  DepartmentValidator.cs
+
+SERVICE
+-------
+  Interface   : IDepartmentService.cs
+  Service     : DepartmentService.cs
+
+CONTROLLER
+----------
+  DepartmentController.cs
+    → GetAll()
+    → GetById()
+    → Create()
+    → Update()
+    → Delete()
+
+==============================================================
+MODULE 4 — DESIGNATION
+==============================================================
+
+DAL
+---
+  Interfaces  : IDesignationRepository.cs
+  Repositories: DesignationRepository.cs
+
+BLL — DTOs
+----------
+  CreateDesignationDto.cs
+  UpdateDesignationDto.cs
+  DesignationResponseDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IDesignationService.cs
+  Service     : DesignationService.cs
+
+CONTROLLER
+----------
+  DesignationController.cs
+    → GetAll()
+    → GetById()
+    → Create()
+    → Update()
+    → Delete()
+
+==============================================================
+MODULE 5 — EMPLOYEE PROFILE (ESS — Self Service)
+==============================================================
+
+DAL
+---
+  Interfaces  : IEmployeeRepository, IAttendanceRepository,
+                ILeaveRepository, IPayrollRepository, IDocumentRepository
+  Repositories: (reuses existing repositories — no new ones needed)
+
+BLL — DTOs
+----------
+  EmployeeProfileDto.cs
+  UpdateProfileDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IEmployeeProfileService.cs
+  Service     : EmployeeProfileService.cs
+
+CONTROLLER
+----------
+  EmployeeProfileController.cs
+    → GetMyProfile()
+    → UpdateProfile()
+    → GetMyProjects()
+    → GetMyDocuments()
+    → GetMyAttendance()
+    → GetMyLeaves()
+    → GetMyPayroll()
+
+==============================================================
+MODULE 6 — HOLIDAY MANAGEMENT                         [NEW]
+==============================================================
+
+DAL
+---
+  Interfaces  : IHolidayRepository.cs
+  Repositories: HolidayRepository.cs
+
+BLL — DTOs
+----------
+  CreateHolidayDto.cs
+  HolidayResponseDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IHolidayService.cs
+  Service     : HolidayService.cs
+
+CONTROLLER
+----------
+  HolidayController.cs
+    → GetAll()
+    → Create()
+    → Update()
+    → Delete()
+
+==============================================================
+MODULE 7 — PROJECT MANAGEMENT
+==============================================================
+
+DAL
+---
+  Interfaces  : IProjectRepository.cs
+                IEmployeeProjectRepository.cs
+  Repositories: ProjectRepository.cs
+                EmployeeProjectRepository.cs
+
+BLL — DTOs
+----------
+  CreateProjectDto.cs
+  UpdateProjectDto.cs
+  AssignEmployeeProjectDto.cs
+  ProjectResponseDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IProjectService.cs
+  Service     : ProjectService.cs
+
+CONTROLLER
+----------
+  ProjectController.cs
+    → GetAll()
+    → GetById()
+    → Create()
+    → Update()
+    → Delete()
+    → AssignEmployee()
+    → RemoveEmployee()
+
+==============================================================
+MODULE 8 — DOCUMENT MANAGEMENT
+==============================================================
+
+DAL
+---
+  Interfaces  : IDocumentRepository.cs
+  Repositories: DocumentRepository.cs
+
+BLL — DTOs
+----------
+  UploadDocumentDto.cs
+  DocumentResponseDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IDocumentService.cs
+  Service     : DocumentService.cs
+  Helpers     : FileHelper.cs (EMS.Shared)
+
+CONTROLLER
+----------
+  DocumentController.cs
+    → UploadDocument()
+    → GetDocuments()
+    → DownloadDocument()
+    → DeleteDocument()
+
+==============================================================
+MODULE 9 — ASSET MANAGEMENT                           [NEW]
+==============================================================
+
+DAL
+---
+  Interfaces  : IAssetRepository.cs
+                IEmployeeAssetRepository.cs
+  Repositories: AssetRepository.cs
+                EmployeeAssetRepository.cs
+
+BLL — DTOs
+----------
+  CreateAssetDto.cs
+  AssignAssetDto.cs
+  AssetResponseDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IAssetService.cs
+  Service     : AssetService.cs
+
+CONTROLLER
+----------
+  AssetController.cs
+    → GetAll()
+    → GetById()
+    → Create()
+    → Assign()
+    → Revoke()
+
+==============================================================
+MODULE 10 — ATTENDANCE
+==============================================================
+
+DAL
+---
+  Interfaces  : IAttendanceRepository.cs
+                IHolidayRepository.cs      (for working-day calculation)
+  Repositories: AttendanceRepository.cs
+                HolidayRepository.cs
+
+BLL — DTOs
+----------
+  CheckInDto.cs
+  CheckOutDto.cs
+  AttendanceResponseDto.cs
+  AttendanceReportDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IAttendanceService.cs
+  Service     : AttendanceService.cs
+  Helpers     : DateTimeHelper.cs (EMS.Shared)
+
+CONTROLLER
+----------
+  AttendanceController.cs
+    → CheckIn()
+    → CheckOut()
+    → GetAttendance()
+    → GetMonthlyReport()
+
+==============================================================
+MODULE 11 — LEAVE MANAGEMENT
+==============================================================
+
+DAL
+---
+  Interfaces  : ILeaveRepository.cs
+                ILeaveTypeRepository.cs
+                IHolidayRepository.cs      (to exclude public holidays)
+  Repositories: LeaveRepository.cs
+                LeaveTypeRepository.cs
+                HolidayRepository.cs
+
+BLL — DTOs
+----------
+  ApplyLeaveDto.cs
+  ApproveLeaveDto.cs
+  RejectLeaveDto.cs
+  LeaveResponseDto.cs
+
+BLL — Validators
+----------------
+  LeaveValidator.cs
+
+SERVICE
+-------
+  Interface   : ILeaveService.cs
+  Service     : LeaveService.cs
+
+CONTROLLER
+----------
+  LeaveController.cs
+    → ApplyLeave()
+    → ApproveLeave()
+    → RejectLeave()
+    → GetLeaveBalance()
+    → GetLeaveHistory()
+
+==============================================================
+MODULE 12 — PAYROLL
+==============================================================
+
+DAL
+---
+  Interfaces  : IPayrollRepository.cs
+                IEmployeeRepository.cs
+                IAttendanceRepository.cs
+  Repositories: PayrollRepository.cs
+                (reuses EmployeeRepository + AttendanceRepository)
+
+BLL — DTOs
+----------
+  GeneratePayrollDto.cs
+  PayrollResponseDto.cs
+  PayslipDto.cs
+
+BLL — Validators
+----------------
+  PayrollValidator.cs
+
+BLL — Strategies (Strategy Pattern)
+------------------------------------
+  ISalaryStrategy.cs
+  PermanentEmployeeSalaryStrategy.cs
+  ContractEmployeeSalaryStrategy.cs
+  InternSalaryStrategy.cs
+
+SERVICE
+-------
+  Interface   : IPayrollService.cs
+  Service     : PayrollService.cs
+  Helpers     : FileHelper.cs (for PDF payslip — EMS.Shared)
+
+CONTROLLER
+----------
+  PayrollController.cs
+    → GenerateSalary()
+    → GetSalaryHistory()
+    → DownloadPayslip()
+
+==============================================================
+MODULE 13 — SEPARATION / EXIT MANAGEMENT              [NEW]
+==============================================================
+
+DAL
+---
+  Interfaces  : ISeparationRepository.cs
+  Repositories: SeparationRepository.cs
+
+BLL — DTOs
+----------
+  InitiateSeparationDto.cs
+  SeparationResponseDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : ISeparationService.cs
+  Service     : SeparationService.cs
+
+CONTROLLER
+----------
+  SeparationController.cs
+    → Initiate()
+    → Approve()
+    → GetHistory()
+
+==============================================================
+MODULE 14 — DASHBOARD
+==============================================================
+
+DAL
+---
+  Interfaces  : (aggregates data from all repos via IUnitOfWork)
+  Repositories: (no dedicated repo — uses UnitOfWork)
+
+BLL — DTOs
+----------
+  DashboardSummaryDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IDashboardService.cs
+  Service     : DashboardService.cs
+
+CONTROLLER
+----------
+  DashboardController.cs
+    → GetDashboardSummary()
+
+==============================================================
+MODULE 15 — REPORTS                                   [NEW]
+==============================================================
+
+DAL
+---
+  Interfaces  : IAttendanceRepository, IPayrollRepository,
+                ILeaveRepository, IEmployeeRepository
+  Repositories: (reuses existing repositories)
+
+BLL — DTOs
+----------
+  AttendanceReportDto.cs         (reused from Attendance module)
+  PayrollResponseDto.cs          (reused from Payroll module)
+  LeaveResponseDto.cs            (reused from Leave module)
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : (uses existing IAttendanceService, IPayrollService, ILeaveService)
+  Service     : (ExcelHelper + FileHelper in EMS.Shared generate the files)
+  Helpers     : ExcelHelper.cs (EMS.Shared)
+                FileHelper.cs (EMS.Shared)
+
+CONTROLLER
+----------
+  ReportController.cs
+    → ExportAttendanceReport()
+    → ExportPayrollReport()
+    → ExportLeaveReport()
+    → ExportHeadcountReport()
+
+==============================================================
+MODULE 16 — NOTIFICATIONS
+==============================================================
+
+DAL
+---
+  Interfaces  : INotificationRepository.cs
+  Repositories: NotificationRepository.cs
+
+BLL — DTOs
+----------
+  NotificationDto.cs
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : INotificationService.cs
+  Service     : NotificationService.cs
+  Helpers     : EmailHelper.cs (EMS.Shared)
+
+CONTROLLER
+----------
+  NotificationController.cs
+    → GetNotifications()
+    → MarkAsRead()
+
+==============================================================
+MODULE 17 — AUDIT LOG
+==============================================================
+
+DAL
+---
+  Interfaces  : IAuditLogRepository.cs
+  Repositories: AuditLogRepository.cs
+
+BLL — DTOs
+----------
+  (logs written internally — no public-facing DTO)
+
+BLL — Validators
+----------------
+  (none)
+
+SERVICE
+-------
+  Interface   : IAuditLogService.cs
+  Service     : AuditLogService.cs
+
+CONTROLLER
+----------
+  No dedicated controller
+  → Triggered via RequestLoggingMiddleware automatically
+
+==============================================================
+MODULE 18 — AI FEATURES (Search + Chatbot)
+==============================================================
+
+DAL
+---
+  Interfaces  : (none — calls external APIs directly)
+  Repositories: (none)
+
+BLL — DTOs
+----------
+  (prompt strings + plain response strings — no dedicated DTO needed)
+
+BLL — Validators
+----------------
+  (none)
+
+BLL — Providers (Factory Pattern)
+----------------------------------
+  IAIProvider.cs
+  OpenAIProvider.cs
+  GeminiProvider.cs
+
+SERVICE
+-------
+  Interface   : IAIProvider.cs
+  Service     : OpenAIProvider.cs / GeminiProvider.cs
+  NOTE        : No separate IAIService wrapper needed — providers are injected directly
+
+CONTROLLER
+----------
+  AIController.cs
+    → AISearch()
+    → AskChatbot()
+
+==============================================================
+EMS.SHARED — HELPERS & UTILITIES (Used Across All Modules)
+==============================================================
+
+Response Models
+---------------
+  ApiResponse.cs
+  PagedResponse.cs
+
+Helpers
+-------
+  JwtHelper.cs
+  FileHelper.cs
+  DateTimeHelper.cs
+  ExcelHelper.cs                 [NEW]
+  EmailHelper.cs                 [NEW]
+
+Constants
+---------
+  RoleConstants.cs
+  AppConstants.cs
+
+Exceptions
+----------
+  NotFoundException.cs
+  BadRequestException.cs
+  UnauthorizedException.cs
+  ForbiddenException.cs          [NEW]
+
+==============================================================
+PHASE ORDER (IMPLEMENTATION SEQUENCE)
+==============================================================
+
+Phase  1  → Auth + RBAC + ChangePassword
+Phase  2  → Department
+Phase  3  → Designation
+Phase  4  → Employee Management (CRUD + BulkImport)
+Phase  5  → Employee Profile / ESS
+Phase  6  → Holiday Management
+Phase  7  → Project Management
+Phase  8  → Document Management
+Phase  9  → Asset Management
+Phase 10  → Attendance
+Phase 11  → Leave Management
+Phase 12  → Payroll
+Phase 13  → Separation / Exit
+Phase 14  → Dashboard
+Phase 15  → Reports
+Phase 16  → Notifications
+Phase 17  → Audit Logs
+Phase 18  → AI Search + Chatbot
+Phase 19  → Salary Prediction         (Stretch Goal)
+Phase 20  → Forgot/Reset Password     (Stretch Goal - needs email infra)
+
+==============================================================
+END OF DOCUMENT
+==============================================================
