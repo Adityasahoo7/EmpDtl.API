@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\DotNet Project\\EmpDtl\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF7734D6-72D6-4E1E-93D3-0792F6862F88}|EmpDtl\\EmpDtl.csproj|d:\\dotnet project\\empdtl\\empdtl\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF7734D6-72D6-4E1E-93D3-0792F6862F88}|EmpDtl\\EmpDtl.csproj|solutionrelative:empdtl\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|d:\\dotnet project\\empdtl\\empdtl.models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C88C4B3-37DF-4D5A-8D44-D8B64121EF49}|EmpDtl.Models\\EmpDtl.Models.csproj|solutionrelative:empdtl.models\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF7734D6-72D6-4E1E-93D3-0792F6862F88}|EmpDtl\\EmpDtl.csproj|d:\\dotnet project\\empdtl\\empdtl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF7734D6-72D6-4E1E-93D3-0792F6862F88}|EmpDtl\\EmpDtl.csproj|solutionrelative:empdtl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,11 +58,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\User.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\User.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\User.cs",
+              "RelativeToolTip": "EmpDtl.Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:54:56.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EmpDtl\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EmpDtl\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAA7wKUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:52:53.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChangePasswordDTO.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\ChangePasswordDTO.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\ChangePasswordDTO.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\ChangePasswordDTO.cs",
+              "RelativeToolTip": "EmpDtl.Models\\DTOs\\ChangePasswordDTO.cs",
+              "ViewState": "AgIAAAEAAABAMzMzMzMrwA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:37:34.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginRequestDTO.cs",
+              "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "RelativeToolTip": "EmpDtl.Models\\DTOs\\LoginRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T16:35:36.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "20260614065259_adddoj.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\Migrations\\20260614065259_adddoj.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\Migrations\\20260614065259_adddoj.cs",
@@ -54,11 +122,12 @@
               "RelativeToolTip": "EmpDtl.Models\\Migrations\\20260614065259_adddoj.cs",
               "ViewState": "AgIAAAkAAACAmZmZmZkvwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T06:52:59.878Z"
+              "WhenOpened": "2026-06-14T06:52:59.878Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "GetEmpDTO.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\GetEmpDTO.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\GetEmpDTO.cs",
@@ -66,11 +135,12 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\GetEmpDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T13:43:53.857Z"
+              "WhenOpened": "2026-06-07T13:43:53.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "GetEmpDTOV2.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\GetEmpDTOV2.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\GetEmpDTOV2.cs",
@@ -78,48 +148,51 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\GetEmpDTOV2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T13:43:45.548Z"
+              "WhenOpened": "2026-06-07T13:43:45.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UpdateEmpDTOV2.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\UpdateEmpDTOV2.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\UpdateEmpDTOV2.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\UpdateEmpDTOV2.cs",
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\UpdateEmpDTOV2.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T07:30:20.057Z"
+              "WhenOpened": "2026-05-31T07:30:20.057Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "EmpDtl\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAACgmZmZmZkhwIYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T05:12:36.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AddEmployee.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\AddEmployee.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\AddEmployee.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\AddEmployee.cs",
               "RelativeToolTip": "EmpDtl.Models\\AddEmployee.cs",
-              "ViewState": "AgIAAAwAAADQzMzMzMw7wBsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAACgmZmZmZklwBsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T04:43:42.504Z"
+              "WhenOpened": "2026-05-27T04:43:42.504Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CreateEmpDTOV2.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl.Models\\DTOs\\CreateEmpDTOV2.cs",
               "RelativeDocumentMoniker": "EmpDtl.Models\\DTOs\\CreateEmpDTOV2.cs",
@@ -127,11 +200,12 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\CreateEmpDTOV2.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-14T08:35:39.909Z"
+              "WhenOpened": "2026-06-14T08:35:39.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Program.cs",
               "RelativeDocumentMoniker": "EmpDtl\\Program.cs",
@@ -139,7 +213,8 @@
               "RelativeToolTip": "EmpDtl\\Program.cs",
               "ViewState": "AgIAAGQAAAAAMzMzMzMbwHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T05:00:45.429Z"
+              "WhenOpened": "2026-05-27T05:00:45.429Z",
+              "EditorCaption": ""
             }
           ]
         }
