@@ -72,57 +72,7 @@ namespace EmpDtl.Controllers
             return Ok(response);
         }
 
-        [HttpPost]
-        [Route("ChnagePassword")]
-       // [Authorize(Roles ="Admin,User")]
-        public async Task<IActionResult> changepassword(ChangePasswordDTO dto)
-        {
-            var userclaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            if(string.IsNullOrEmpty(userclaim)|| !Guid.TryParse(userclaim ,out Guid userId))
-            {
-                return Unauthorized(
-                    new
-                    {
-                        message = "Invalid User"
-                    }
-                    );
-            }
-
-            var user = await _context.UserDs.FirstOrDefaultAsync(x => x.Id == userId);
-            if(user == null)
-            {
-                return NotFound(
-
-                    new
-                    {
-                        message = "User Not found"
-                    });
-            }
-
-
-            if (!BCrypt.Net.BCrypt.Verify(dto.currentpassword, user.Passwordhash))
-            {
-                return BadRequest(new
-                {
-                    message = "New Password not be same as old password"
-                });
-            }
-
-            user.Passwordhash = BCrypt.Net.BCrypt.HashPassword(dto.currentpassword);
-
-            await _context.SaveChangesAsync();
-
-            return Ok(new
-            {
-                message = "Password Change Successfully"
-            });
-
-
-        
-        
-        }
-
+       
         //REGISTER METHOD
         [HttpPost]
         [Route("Registeruser")]

@@ -11,3 +11,18 @@
 2026-07-11 19:31:11.727 +05:30 [INF] Login Successful for userName : Rakesh
 2026-07-11 19:32:14.774 +05:30 [INF] Use GETALL API by username : Rakesh With Role: User
 2026-07-11 19:32:32.963 +05:30 [INF] Username : Rakesh Have get the user details of this ID : 2005
+2026-07-11 19:42:57.241 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-11 19:43:24.424 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 19:43:24.481 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:44:14.996 +05:30 [INF] Username : Rakesh Have get the user details of this ID : 2005
+2026-07-11 19:50:22.359 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-11 19:50:51.968 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 19:50:51.996 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:52:03.678 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 19:52:03.680 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:52:13.660 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 19:52:13.661 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:54:12.708 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-11 20:02:49.709 +05:30 [INF] No Valid Password Given
+2026-07-11 20:02:59.941 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 20:02:59.973 +05:30 [INF] Login Successful for userName : Rakesh

@@ -10,6 +10,9 @@ namespace EmpDtl.Models.DTOs
     public class ChangePasswordDTO
     {
         [Required]
+        public string Username { get; set; }
+
+        [Required]
         public string currentpassword { get; set; }
 
         [Required]
