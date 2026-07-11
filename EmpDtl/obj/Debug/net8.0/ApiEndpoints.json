@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "EmpDtl.Controllers.AuthController",
+    "Method": "changepassword",
+    "RelativePath": "api/Auth/ChnagePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EmpDtl.Models.DTOs.ChangePasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmpDtl.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/loginuser",
     "HttpMethod": "POST",

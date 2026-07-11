@@ -74,7 +74,7 @@ namespace EmpDtl.Controllers
 
         [HttpPost]
         [Route("ChnagePassword")]
-        [Authorize]
+       // [Authorize(Roles ="Admin,User")]
         public async Task<IActionResult> changepassword(ChangePasswordDTO dto)
         {
             var userclaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;

@@ -36,6 +36,37 @@
         }
       }
     },
+    "/api/Auth/ChnagePassword": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Auth/Registeruser": {
       "post": {
         "tags": [
@@ -495,6 +526,29 @@
   },
   "components": {
     "schemas": {
+      "ChangePasswordDTO": {
+        "required": [
+          "conformpassword",
+          "currentpassword",
+          "newpassword"
+        ],
+        "type": "object",
+        "properties": {
+          "currentpassword": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "newpassword": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "conformpassword": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateEmpDTO": {
         "type": "object",
         "properties": {

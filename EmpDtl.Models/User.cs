@@ -24,5 +24,9 @@ namespace EmpDtl.Models
         [RegularExpression("^(User|Manager|Admin)$",
             ErrorMessage ="Role Must be user and admin")]
         public string Role { get; set; }
+
+        //public string? RefreshToken { get; set; }
+
+        //public DateTime RefreshTokenExpiryTime { get; set; }
     }
 }

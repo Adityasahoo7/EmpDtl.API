@@ -1,0 +1,13 @@
+2026-07-11 18:21:42.616 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-11 18:22:58.999 +05:30 [INF] Aditya User Already Present but try to register again
+2026-07-11 18:34:42.511 +05:30 [INF] User Creation Scuuessfully For UserName Rakesh For Role : User
+2026-07-11 18:37:04.484 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 18:37:05.001 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:05:39.288 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-11 19:06:13.508 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 19:06:13.640 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:09:50.541 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-11 19:31:11.665 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-11 19:31:11.727 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-11 19:32:14.774 +05:30 [INF] Use GETALL API by username : Rakesh With Role: User
+2026-07-11 19:32:32.963 +05:30 [INF] Username : Rakesh Have get the user details of this ID : 2005
