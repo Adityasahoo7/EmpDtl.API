@@ -82,8 +82,7 @@
               "RelativeToolTip": "EmpDtl\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-11T13:03:26.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-11T13:03:26.34Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\RefreshTokenRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T12:14:06.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-11T12:14:06.089Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "EmpDtl.Models\\User.cs",
               "ViewState": "AgIAAAYAAABAMzMzMzMDwBEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T16:54:56.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T16:54:56.313Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "EmpDtl\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAAAEoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T16:52:53.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T16:52:53.083Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\ChangePasswordDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T16:37:34.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-10T16:37:34.601Z"
             },
             {
               "$type": "Document",
@@ -145,7 +140,7 @@
               "RelativeDocumentMoniker": "EmpDtl\\Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\DotNet Project\\EmpDtl\\EmpDtl\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "EmpDtl\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAGEAAAAABwAAAAAAwHQAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAABwAAAAAAwHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T05:12:36.006Z",
               "EditorCaption": ""
@@ -160,8 +155,7 @@
               "RelativeToolTip": "EmpDtl.Models\\DTOs\\TokenResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T12:14:32.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-11T12:14:32.29Z"
             },
             {
               "$type": "Document",

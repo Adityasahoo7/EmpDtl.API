@@ -1,0 +1,44 @@
+2026-07-12 17:32:37.569 +05:30 [WRN] The WebRootPath was not found: D:\DotNet Project\EmpDtl\EmpDtl\wwwroot. Static files may be unavailable.
+2026-07-12 17:39:06.138 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-12 17:39:06.594 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-12 17:39:07.672 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 17:39:48.629 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-12 17:39:48.631 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-12 17:39:48.685 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:08:04.059 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:21:07.247 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:21:11.712 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:21:25.532 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:21:53.734 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:22:31.255 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:23:11.068 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:23:16.939 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:24:15.096 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:27:00.601 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:27:49.873 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:27:59.078 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:29:42.729 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:29:56.607 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:31:54.163 +05:30 [INF] No Valid Password Given
+2026-07-12 18:32:07.426 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-12 18:32:07.428 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-12 18:32:07.508 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:32:28.550 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:32:41.583 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-07-12 18:32:41.585 +05:30 [INF] Login Successful for userName : Aditya
+2026-07-12 18:32:41.606 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:33:03.297 +05:30 [INF] Token Created Successfully for UserName: Rakesh
+2026-07-12 18:33:03.298 +05:30 [INF] Login Successful for userName : Rakesh
+2026-07-12 18:33:03.387 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:36:04.050 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:37:10.307 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:40:07.767 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:41:13.119 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-07-12 18:41:13.121 +05:30 [INF] Login Successful for userName : Aditya
+2026-07-12 18:41:13.252 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:41:48.900 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-07-12 18:41:48.902 +05:30 [INF] Login Successful for userName : Aditya
+2026-07-12 18:41:49.156 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
+2026-07-12 18:42:28.870 +05:30 [INF] Token Created Successfully for UserName: Aditya
+2026-07-12 18:42:28.872 +05:30 [INF] Login Successful for userName : Aditya
+2026-07-12 18:42:29.054 +05:30 [INF] Use GETALL API by username : Unknown With Role: Unknown
